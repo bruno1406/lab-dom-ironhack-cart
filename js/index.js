@@ -17,9 +17,6 @@ function updateSubtotal(product) {
 function calculateAll() {
   // code in the following two lines is added just for testing purposes.
   // it runs when only iteration 1 is completed. at later point, it can be removed.
-  // const singleProduct = document.querySelector('.product');
-  // updateSubtotal(singleProduct);
-  // end of test
 
   // ITERATION 2
   const products = document.getElementsByClassName('product')
@@ -27,19 +24,13 @@ function calculateAll() {
   for (let i = 0; i < products.length; i++) {
     total += updateSubtotal(products[i])
   }
- 
+   
+  // ITERATION 3
   let totalPrice = document.querySelector('h2 span')
 
   totalPrice.innerText = total;
-
-  return totalPrice
-
-
   
-
-  // ITERATION 3
-  //... your code goes here
-  // return products
+  return products
 }
 
 // ITERATION 4
